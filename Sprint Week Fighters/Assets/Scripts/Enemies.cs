@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class Enemies : MonoBehaviour
 {
-    public int maxHouse = 100;
+    public int maxHealth = 100;
     int currentHealth;
     // Start is called before the first frame update
     void Start()
     {
-        currentHealth = maxHouse;
+        currentHealth = maxHealth;
     }
 
     // Update is called once per frame
@@ -30,6 +30,7 @@ public class Enemies : MonoBehaviour
 
     public void Die()
     {
-
+        Destroy(gameObject);
+        Debug.Log("oh ma god she fukin dead");
     }
 }

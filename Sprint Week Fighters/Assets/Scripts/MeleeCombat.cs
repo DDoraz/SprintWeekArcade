@@ -10,12 +10,16 @@ public class MeleeCombat : MonoBehaviour
     public int attackDamage = 20;
     public float attackRate = 2f;
     public float nextAttackTime = 0f;
+    public GameObject fist;
     // Start is called before the first frame update
     void Start()
     {
         
     }
-
+    private void FixedUpdate()
+    {
+        
+    }
     // Update is called once per frame
     void Update()
     {
@@ -25,7 +29,15 @@ public class MeleeCombat : MonoBehaviour
             {
                 Attack();
                 nextAttackTime = Time.time + 1f / attackRate;
+                fist.SetActive(true);
             }
+            else
+            {
+                fist.SetActive(false);
+            }
+
+            
+            
         }
 
 
@@ -39,6 +51,7 @@ public class MeleeCombat : MonoBehaviour
 
         foreach (Collider2D enemy in hitEnemies)
         {
+            Debug.Log("we hit" + enemy.name);
             enemy.GetComponent<Enemies>().TakeDamage(attackDamage);
         }
 
