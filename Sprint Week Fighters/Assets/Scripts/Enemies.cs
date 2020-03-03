@@ -32,5 +32,9 @@ public class Enemies : MonoBehaviour
     {
         Destroy(gameObject);
         Debug.Log("oh ma god she fukin dead");
+        EnemySpawner.enemiesOnScreen--;
+        EnemySpawner.totalEnemyLeft--;
+        EnemySpawner.enemysKilled++;
+;
     }
 }

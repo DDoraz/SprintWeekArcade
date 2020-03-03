@@ -18,6 +18,16 @@ public class CharacterController : MonoBehaviour
     {
         Vector2 moveInput = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
         moveVelocity = moveInput.normalized * speed;
+
+        if (Input.GetKey(KeyCode.RightArrow))
+        {
+            transform.eulerAngles = new Vector3(0, 0, 0); // Flipped
+        }
+
+        if (Input.GetKey(KeyCode.LeftArrow))
+        {
+            transform.eulerAngles = new Vector3(0, 180, 0); // Flipped
+        }
     }
 
     private void FixedUpdate()
