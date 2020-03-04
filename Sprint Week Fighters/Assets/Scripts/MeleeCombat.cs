@@ -46,7 +46,6 @@ public class MeleeCombat : MonoBehaviour
 
     public void Attack()
     {
-        
         animator.SetTrigger("LightAttack");
         Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
 
