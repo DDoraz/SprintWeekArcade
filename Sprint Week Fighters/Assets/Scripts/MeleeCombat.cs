@@ -12,12 +12,17 @@ public class MeleeCombat : MonoBehaviour
     public float weakAttackRate = 2f;
     public float strongAttackRate = 1f;
     public float nextAttackTime = 0f;
+    public KeyCode lightAttack;
+    public KeyCode heavyAttack;
+
+    public EnemyAI enemyHit;
+   
 
     public Animator animator;
     // Start is called before the first frame update
     void Start()
     {
-        
+        enemyHit = GetComponent<EnemyAI>();
     }
     private void FixedUpdate()
     {
@@ -28,13 +33,13 @@ public class MeleeCombat : MonoBehaviour
     {
         if(Time.time >= nextAttackTime)
         {
-            if (Input.GetKeyDown(KeyCode.Space))
+            if (Input.GetKeyDown(lightAttack))
             {
                 animator.SetBool("isWalking", false);
                 Attack();
                 nextAttackTime = Time.time + 1f / weakAttackRate;
             }
-            if (Input.GetKeyDown(KeyCode.Z))
+            if (Input.GetKeyDown(heavyAttack))
             {
                 animator.SetBool("isWalking", false);
                 StrongAttack();
@@ -47,12 +52,14 @@ public class MeleeCombat : MonoBehaviour
     public void Attack()
     {
         animator.SetTrigger("LightAttack");
+        animator.SetTrigger("lightPunch");
         Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
 
         foreach (Collider2D enemy in hitEnemies)
         {
             Debug.Log("we hit" + enemy.name);
             enemy.GetComponent<Enemies>().TakeDamage(weakAttackDamage);
+            enemyHit.currentEnemyState = EnemyAI.EnemyState.Hit;
         }
 
     }
@@ -61,12 +68,14 @@ public class MeleeCombat : MonoBehaviour
     {
         
         animator.SetTrigger("HeavyAttack");
+        animator.SetTrigger("heavyPunch");
         Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
         
         foreach (Collider2D enemy in hitEnemies)
         {
             Debug.Log("we hit" + enemy.name);
             enemy.GetComponent<Enemies>().TakeDamage(strongAttackDamage);
+            enemyHit.currentEnemyState = EnemyAI.EnemyState.Hit;
         }
 
     }

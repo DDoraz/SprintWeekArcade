@@ -11,6 +11,8 @@ public class CharacterController : MonoBehaviour
     public int maxHealth = 100;
     public int currentHealth;
     public HealthBar healthbar;
+    public string moveHorizontal;
+    public string moveVertical;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,25 +24,36 @@ public class CharacterController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Vector2 moveInput = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
+        Vector2 moveInput = new Vector2(Input.GetAxisRaw(moveHorizontal), Input.GetAxisRaw(moveVertical));
         moveVelocity = moveInput.normalized * speed;
 
         if (Input.GetKey(KeyCode.RightArrow))
         {
             transform.eulerAngles = new Vector3(0, 0, 0); // Flipped
+           // animator.SetBool("isWalking", true);
+        }
+        
+        if (Input.GetKey(KeyCode.LeftArrow))
+        {
+            transform.eulerAngles = new Vector3(0, 180, 0); // Flipped
+           // animator.SetBool("isWalking", true);
+        } 
+
+        if(Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.RightArrow))
+        {
             animator.SetBool("isWalking", true);
-        } else
+        }else
         {
             animator.SetBool("isWalking", false);
         }
 
-        if (Input.GetKey(KeyCode.LeftArrow))
+        if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.G))
         {
-            transform.eulerAngles = new Vector3(0, 180, 0); // Flipped
-            animator.SetBool("isWalking", true);
-        } else
+            animator.SetBool("walkingP2", true);
+        }
+        else
         {
-            animator.SetBool("isWalking", false);
+            animator.SetBool("walkingP2", false);
         }
 
         //test ui health bar
@@ -55,7 +68,7 @@ public class CharacterController : MonoBehaviour
         rb.MovePosition(rb.position + moveVelocity * Time.fixedDeltaTime);
     }
 
-    void TakeDamage(int damage)
+   public void TakeDamage(int damage)
     {
         currentHealth -= damage;
         healthbar.SetHealth(currentHealth);

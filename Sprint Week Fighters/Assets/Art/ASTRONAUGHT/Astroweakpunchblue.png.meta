@@ -101,10 +101,10 @@ TextureImporter:
       name: Astroweakpunchblue_0
       rect:
         serializedVersion: 2
-        x: 12
-        y: 4
-        width: 8
-        height: 22
+        x: 0
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -112,7 +112,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9fe028375455cfe4b85d5084324de3fe
+      spriteID: 09466d2ea2d3c914a9e310148032baea
       internalID: -4930031797272914112
       vertices: []
       indices: 
@@ -122,10 +122,10 @@ TextureImporter:
       name: Astroweakpunchblue_1
       rect:
         serializedVersion: 2
-        x: 44
-        y: 4
-        width: 8
-        height: 22
+        x: 32
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -133,7 +133,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 87947c4ab67b47e4bb4aa74edb13e4ab
+      spriteID: d8c8cd01eeacf8c4ca32fd9b1bec2a85
       internalID: 5336401558963417804
       vertices: []
       indices: 
@@ -143,10 +143,10 @@ TextureImporter:
       name: Astroweakpunchblue_2
       rect:
         serializedVersion: 2
-        x: 76
-        y: 4
-        width: 12
-        height: 22
+        x: 64
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,7 +154,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 897cd2b8b02232a4894c6972b1fcf677
+      spriteID: deafbc1ffcd9db740b20646ca492dd4e
       internalID: -53729040509754396
       vertices: []
       indices: 
@@ -164,10 +164,10 @@ TextureImporter:
       name: Astroweakpunchblue_3
       rect:
         serializedVersion: 2
-        x: 108
-        y: 4
-        width: 8
-        height: 22
+        x: 96
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -175,7 +175,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4e99b6608715a9242b4a367b3f4639ef
+      spriteID: 0f616e15334ab4044bd77f3746854914
       internalID: -1892129023710392132
       vertices: []
       indices: 

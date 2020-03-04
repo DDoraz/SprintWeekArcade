@@ -101,10 +101,10 @@ TextureImporter:
       name: AstroWalkblue_0
       rect:
         serializedVersion: 2
-        x: 12
-        y: 4
-        width: 8
-        height: 22
+        x: 0
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -112,7 +112,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7b85e3003a2d99342b5a6d7d1e0c6864
+      spriteID: 7618ef4d48dc73e44bcd7d85305ae7f6
       internalID: 6386094289801703934
       vertices: []
       indices: 
@@ -122,10 +122,10 @@ TextureImporter:
       name: AstroWalkblue_1
       rect:
         serializedVersion: 2
-        x: 44
-        y: 4
-        width: 8
-        height: 22
+        x: 32
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -133,7 +133,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9b9fab0323cee94499d7adf4015bd13f
+      spriteID: 4775f620ade4bd54a9c88d176dd7d810
       internalID: 4938370090750655632
       vertices: []
       indices: 
@@ -143,10 +143,10 @@ TextureImporter:
       name: AstroWalkblue_2
       rect:
         serializedVersion: 2
-        x: 76
-        y: 4
-        width: 8
-        height: 22
+        x: 64
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,7 +154,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fa3d381d69835eb47b1942d058536e92
+      spriteID: 26386e7bed821134b86bba83e5e31299
       internalID: -8246573928266539478
       vertices: []
       indices: 
@@ -164,10 +164,10 @@ TextureImporter:
       name: AstroWalkblue_3
       rect:
         serializedVersion: 2
-        x: 108
-        y: 4
-        width: 8
-        height: 22
+        x: 96
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -175,7 +175,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c383c530bafbfa041b86331499079fbb
+      spriteID: 0ab7049fcbf791944aba84a4b46b4ee8
       internalID: 5647817012450732301
       vertices: []
       indices: 

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EnemySpawner : MonoBehaviour
 {
-    public static int totalEnemyLeft = 20;
+    public static int totalEnemyLeft = 10;
     public static int enemysKilled = 0;
     public static int enemiesOnScreen = 0;
     public bool spawning = true;
@@ -15,6 +15,7 @@ public class EnemySpawner : MonoBehaviour
     GameObject currentPoint;
     int index;
     public float timeTillNextSpawn = 1f;
+    public GameObject moveHere;
 
     public float spawnTime = 1f;
     // Start is called before the first frame update
@@ -52,6 +53,16 @@ public class EnemySpawner : MonoBehaviour
             spawning = false;
         }
 
+        if(totalEnemyLeft <= 0)
+        {
+            spawning = false;
+            moveHere.SetActive(true);
+        }
+
+        if (totalEnemyLeft >= 1)
+        {
+            moveHere.SetActive(false);
+        }
 
         spawnTime -= Time.deltaTime;
 

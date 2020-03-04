@@ -46,7 +46,7 @@ GameObject:
   - component: {fileID: 4825284877199227722}
   - component: {fileID: 4825284877199227728}
   m_Layer: 0
-  m_Name: Player
+  m_Name: Player 2
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -105,8 +105,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: -3975554839089404326, guid: 481e3744081f45c46a0607f758678e5c,
-    type: 3}
+  m_Sprite: {fileID: 21300000, guid: ff4236af8f952e04aa296d7735bcea6f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -186,8 +185,9 @@ MonoBehaviour:
   weakAttackRate: 2
   strongAttackRate: 1
   nextAttackTime: 0
-  lightAttack: 306
-  heavyAttack: 308
+  lightAttack: 0
+  heavyAttack: 0
+  enemyHit: {fileID: 0}
   animator: {fileID: 4825284877199227728}
 --- !u!114 &4825284877199227722
 MonoBehaviour:
@@ -206,8 +206,8 @@ MonoBehaviour:
   maxHealth: 100
   currentHealth: 0
   healthbar: {fileID: 0}
-  moveHorizontal: Horizontal
-  moveVertical: Vertical
+  moveHorizontal: HorizontalP2
+  moveVertical: VerticalP2
 --- !u!95 &4825284877199227728
 Animator:
   serializedVersion: 3
@@ -218,7 +218,7 @@ Animator:
   m_GameObject: {fileID: 4825284877199227721}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 353f6185d0a61ea45932f4f39fffd6ac, type: 2}
+  m_Controller: {fileID: 9100000, guid: adb465e9647d9fd448d5007e66a7d49c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
