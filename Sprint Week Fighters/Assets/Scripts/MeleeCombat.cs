@@ -12,7 +12,8 @@ public class MeleeCombat : MonoBehaviour
     public float weakAttackRate = 2f;
     public float strongAttackRate = 1f;
     public float nextAttackTime = 0f;
-    public GameObject fist;
+
+    public Animator animator;
     // Start is called before the first frame update
     void Start()
     {
@@ -29,35 +30,24 @@ public class MeleeCombat : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Space))
             {
+                animator.SetBool("isWalking", false);
                 Attack();
                 nextAttackTime = Time.time + 1f / weakAttackRate;
-                fist.SetActive(true);
             }
-            else
-            {
-                fist.SetActive(false);
-            }
-
             if (Input.GetKeyDown(KeyCode.Z))
             {
+                animator.SetBool("isWalking", false);
                 StrongAttack();
-                nextAttackTime = Time.time + 1f / strongAttackRate;
-                fist.SetActive(true);
+                nextAttackTime = Time.time + 1f / strongAttackRate;        
             }
-            else
-            {
-                fist.SetActive(false);
-            }
-
-
         }
-
-
-        
+     
     }
 
     public void Attack()
     {
+        
+        animator.SetTrigger("LightAttack");
         Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
 
         foreach (Collider2D enemy in hitEnemies)
@@ -70,8 +60,10 @@ public class MeleeCombat : MonoBehaviour
 
     public void StrongAttack()
     {
+        
+        animator.SetTrigger("HeavyAttack");
         Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
-
+        
         foreach (Collider2D enemy in hitEnemies)
         {
             Debug.Log("we hit" + enemy.name);

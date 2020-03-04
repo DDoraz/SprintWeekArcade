@@ -1,31 +1,34 @@
 fileFormatVersion: 2
-guid: 93e96d0079ec44ee0a75175be9fab632
+guid: ea1d706e93c249a48825caf491909a13
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8628725595876021532
-    second: Building_assests_1_0
+      213: -4007785974631535449
+    second: AstroHardPunchbluet_0
   - first:
-      213: -2333412094468251938
-    second: Building_assests_1_1
+      213: 161601063819252579
+    second: AstroHardPunchbluet_1
   - first:
-      213: -3197187815204443475
-    second: Building_assests_1_2
+      213: 3618800076408962528
+    second: AstroHardPunchbluet_2
   - first:
-      213: 402807336799768582
-    second: Building_assests_1_3
+      213: -4698222921408090796
+    second: AstroHardPunchbluet_3
   - first:
-      213: 1151142109337066893
-    second: Building_assests_1_4
+      213: -8775385965860528080
+    second: AstroHardPunchbluet_4
   - first:
-      213: 5092848354633823665
-    second: Building_assests_1_5
+      213: 7157724516062157643
+    second: AstroHardPunchbluet_5
   - first:
-      213: -4955772216660195092
-    second: Building_assests_1_6
+      213: -5390465770874097018
+    second: AstroHardPunchbluet_6
   - first:
-      213: 5237618171610429898
-    second: Building_assests_1_7
+      213: -3175766917258824588
+    second: AstroHardPunchbluet_7
+  - first:
+      213: 6355992452457502883
+    second: AstroHardPunchbluet_8
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -110,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Building_assests_1_0
+      name: AstroHardPunchbluet_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 88
-        width: 35
-        height: 32
+        x: 12
+        y: 4
+        width: 8
+        height: 22
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,20 +127,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 90cedd2e1a2b7074499cddb3a46252eb
-      internalID: -8628725595876021532
+      spriteID: ce9a3b62ac01cba40aad2cc947d90efe
+      internalID: -4007785974631535449
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Building_assests_1_1
+      name: AstroHardPunchbluet_1
       rect:
         serializedVersion: 2
-        x: 43
-        y: 88
-        width: 20
-        height: 38
+        x: 42
+        y: 4
+        width: 11
+        height: 22
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -145,20 +148,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bfae8be10ad82524ab9b67d73375e967
-      internalID: -2333412094468251938
+      spriteID: 880bd407356576c44b14db81438c0597
+      internalID: 161601063819252579
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Building_assests_1_2
+      name: AstroHardPunchbluet_2
       rect:
         serializedVersion: 2
-        x: 68
-        y: 87
-        width: 39
-        height: 39
+        x: 71
+        y: 4
+        width: 17
+        height: 22
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -166,20 +169,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c37933bfb2be6384d88c566ebac948fa
-      internalID: -3197187815204443475
+      spriteID: 8e47979d7aa5bd944828a3f7477a1396
+      internalID: 3618800076408962528
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Building_assests_1_3
+      name: AstroHardPunchbluet_3
       rect:
         serializedVersion: 2
-        x: 1
-        y: 48
-        width: 51
-        height: 37
+        x: 108
+        y: 4
+        width: 8
+        height: 22
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -187,20 +190,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 739d39666853bfa43b2c11299339b453
-      internalID: 402807336799768582
+      spriteID: de2438d4063b72b469eeb300343b4f71
+      internalID: -4698222921408090796
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Building_assests_1_4
+      name: AstroHardPunchbluet_4
       rect:
         serializedVersion: 2
-        x: 62
-        y: 48
-        width: 53
-        height: 30
+        x: 135
+        y: 4
+        width: 17
+        height: 22
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -208,20 +211,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9a25badb90c33e444973bd4d41d04d0b
-      internalID: 1151142109337066893
+      spriteID: 062305572f86a8243abfe6cab6c9f78d
+      internalID: -8775385965860528080
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Building_assests_1_5
+      name: AstroHardPunchbluet_5
       rect:
         serializedVersion: 2
-        x: 2
-        y: 5
-        width: 42
-        height: 38
+        x: 172
+        y: 4
+        width: 8
+        height: 22
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -229,20 +232,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ce497db17a8f1484fb456a2354608ebc
-      internalID: 5092848354633823665
+      spriteID: f811a5117261c5e45b22f11228bb43ed
+      internalID: 7157724516062157643
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Building_assests_1_6
+      name: AstroHardPunchbluet_6
       rect:
         serializedVersion: 2
-        x: 50
-        y: 1
-        width: 25
-        height: 46
+        x: 199
+        y: 4
+        width: 17
+        height: 22
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -250,20 +253,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 98493f0d12e874b47a19ff2fca8c4098
-      internalID: -4955772216660195092
+      spriteID: 8696bdeaf13e7dd4e8c4d910b5ea9c6a
+      internalID: -5390465770874097018
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Building_assests_1_7
+      name: AstroHardPunchbluet_7
       rect:
         serializedVersion: 2
-        x: 82
-        y: 10
-        width: 22
-        height: 34
+        x: 234
+        y: 4
+        width: 11
+        height: 22
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -271,8 +274,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5f3d12335f6193442a353bb2614bf714
-      internalID: 5237618171610429898
+      spriteID: bacbd7170435a5a4fb5caffc029bceb5
+      internalID: -3175766917258824588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AstroHardPunchbluet_8
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 4
+        width: 8
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa78ac4174b250b4d8d94f5d7d723a2d
+      internalID: 6355992452457502883
       vertices: []
       indices: 
       edges: []

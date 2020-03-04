@@ -1,31 +1,34 @@
 fileFormatVersion: 2
-guid: 93e96d0079ec44ee0a75175be9fab632
+guid: d0e6b623f1a81814a96c276f832bd684
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8628725595876021532
-    second: Building_assests_1_0
+      213: 2768771639602201414
+    second: AstroHardPunch-Sheet_0
   - first:
-      213: -2333412094468251938
-    second: Building_assests_1_1
+      213: 6837727603457557649
+    second: AstroHardPunch-Sheet_1
   - first:
-      213: -3197187815204443475
-    second: Building_assests_1_2
+      213: -180734161508900643
+    second: AstroHardPunch-Sheet_2
   - first:
-      213: 402807336799768582
-    second: Building_assests_1_3
+      213: -6291540036461964588
+    second: AstroHardPunch-Sheet_3
   - first:
-      213: 1151142109337066893
-    second: Building_assests_1_4
+      213: 2256669424769526186
+    second: AstroHardPunch-Sheet_4
   - first:
-      213: 5092848354633823665
-    second: Building_assests_1_5
+      213: -1719158513912763618
+    second: AstroHardPunch-Sheet_5
   - first:
-      213: -4955772216660195092
-    second: Building_assests_1_6
+      213: 139589645964029974
+    second: AstroHardPunch-Sheet_6
   - first:
-      213: 5237618171610429898
-    second: Building_assests_1_7
+      213: 7614816179584190432
+    second: AstroHardPunch-Sheet_7
+  - first:
+      213: -9067037143558968041
+    second: AstroHardPunch-Sheet_8
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -110,169 +113,190 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Building_assests_1_0
+      name: AstroHardPunch-Sheet_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 88
-        width: 35
+        y: 0
+        width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 90cedd2e1a2b7074499cddb3a46252eb
-      internalID: -8628725595876021532
+      spriteID: 8eff36bc6dac6464788332360f66182f
+      internalID: 2768771639602201414
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Building_assests_1_1
+      name: AstroHardPunch-Sheet_1
       rect:
         serializedVersion: 2
-        x: 43
-        y: 88
-        width: 20
-        height: 38
+        x: 32
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bfae8be10ad82524ab9b67d73375e967
-      internalID: -2333412094468251938
+      spriteID: 8b2d7f5b0a124ac49b4b2a0e556b943f
+      internalID: 6837727603457557649
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Building_assests_1_2
+      name: AstroHardPunch-Sheet_2
       rect:
         serializedVersion: 2
-        x: 68
-        y: 87
-        width: 39
-        height: 39
+        x: 64
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c37933bfb2be6384d88c566ebac948fa
-      internalID: -3197187815204443475
+      spriteID: 5dff3a6f56315d6428b8da1714164cc9
+      internalID: -180734161508900643
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Building_assests_1_3
+      name: AstroHardPunch-Sheet_3
       rect:
         serializedVersion: 2
-        x: 1
-        y: 48
-        width: 51
-        height: 37
+        x: 96
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 739d39666853bfa43b2c11299339b453
-      internalID: 402807336799768582
+      spriteID: 8883a4aa3a5dc8c46b31027a3241e243
+      internalID: -6291540036461964588
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Building_assests_1_4
+      name: AstroHardPunch-Sheet_4
       rect:
         serializedVersion: 2
-        x: 62
-        y: 48
-        width: 53
-        height: 30
+        x: 128
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9a25badb90c33e444973bd4d41d04d0b
-      internalID: 1151142109337066893
+      spriteID: c2ec00379ffd072469074e165340ccba
+      internalID: 2256669424769526186
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Building_assests_1_5
+      name: AstroHardPunch-Sheet_5
       rect:
         serializedVersion: 2
-        x: 2
-        y: 5
-        width: 42
-        height: 38
+        x: 160
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ce497db17a8f1484fb456a2354608ebc
-      internalID: 5092848354633823665
+      spriteID: 48522bccd02ca414a8204cd92e58d979
+      internalID: -1719158513912763618
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Building_assests_1_6
+      name: AstroHardPunch-Sheet_6
       rect:
         serializedVersion: 2
-        x: 50
-        y: 1
-        width: 25
-        height: 46
+        x: 192
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 98493f0d12e874b47a19ff2fca8c4098
-      internalID: -4955772216660195092
+      spriteID: 4c06268ee782b4c42a1b4c9d9729fe00
+      internalID: 139589645964029974
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Building_assests_1_7
+      name: AstroHardPunch-Sheet_7
       rect:
         serializedVersion: 2
-        x: 82
-        y: 10
-        width: 22
-        height: 34
+        x: 224
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5f3d12335f6193442a353bb2614bf714
-      internalID: 5237618171610429898
+      spriteID: 9f9d3870e79db2f4b9868e983e4a39e3
+      internalID: 7614816179584190432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AstroHardPunch-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c2be89281b226646b267c1418364f94
+      internalID: -9067037143558968041
       vertices: []
       indices: 
       edges: []
