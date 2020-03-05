@@ -15,14 +15,13 @@ public class MeleeCombat : MonoBehaviour
     public KeyCode lightAttack;
     public KeyCode heavyAttack;
 
-    public EnemyAI enemyHit;
-   
+
 
     public Animator animator;
     // Start is called before the first frame update
     void Start()
     {
-        enemyHit = GetComponent<EnemyAI>();
+        
     }
     private void FixedUpdate()
     {
@@ -59,7 +58,7 @@ public class MeleeCombat : MonoBehaviour
         {
             Debug.Log("we hit" + enemy.name);
             enemy.GetComponent<Enemies>().TakeDamage(weakAttackDamage);
-            enemyHit.currentEnemyState = EnemyAI.EnemyState.Hit;
+            enemy.GetComponent<EnemyAI>().currentEnemyState = EnemyAI.EnemyState.Hit;
         }
 
     }
@@ -75,7 +74,7 @@ public class MeleeCombat : MonoBehaviour
         {
             Debug.Log("we hit" + enemy.name);
             enemy.GetComponent<Enemies>().TakeDamage(strongAttackDamage);
-            enemyHit.currentEnemyState = EnemyAI.EnemyState.Hit;
+            enemy.GetComponent<EnemyAI>().currentEnemyState = EnemyAI.EnemyState.Hit;
         }
 
     }

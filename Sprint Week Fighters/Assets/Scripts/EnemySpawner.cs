@@ -30,10 +30,10 @@ public class EnemySpawner : MonoBehaviour
         spawnPoints = GameObject.FindGameObjectsWithTag("Point");
         index = Random.Range(0, spawnPoints.Length);
         currentPoint = spawnPoints[index];
-        print(currentPoint.name);
+        //print(currentPoint.name);
 
-        Debug.Log(spawning);
-        Debug.Log(totalEnemyLeft);
+        //Debug.Log(spawning);
+        //Debug.Log(totalEnemyLeft);
         if (spawning == true)
         {
             if (enemiesOnScreen <= 5 || totalEnemyLeft >= 5)

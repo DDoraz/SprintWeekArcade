@@ -13,6 +13,9 @@ public class CharacterController : MonoBehaviour
     public HealthBar healthbar;
     public string moveHorizontal;
     public string moveVertical;
+
+    public bool canBeHit = true;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -61,6 +64,18 @@ public class CharacterController : MonoBehaviour
         {
             TakeDamage(20);
         }
+
+        if (currentHealth <= 0)
+        {
+            Destroy(gameObject);
+        }
+    }
+
+
+    public IEnumerator HitTimer(float time = 1)
+    {
+        yield return new WaitForSeconds(time);
+        canBeHit = true;
     }
 
     private void FixedUpdate()
@@ -70,7 +85,13 @@ public class CharacterController : MonoBehaviour
 
    public void TakeDamage(int damage)
     {
+        if (canBeHit == false)
+        {
+            return;
+        }
         currentHealth -= damage;
         healthbar.SetHealth(currentHealth);
+        canBeHit = false;
+        StartCoroutine(HitTimer());
     }
 }
