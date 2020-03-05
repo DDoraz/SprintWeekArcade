@@ -11,8 +11,10 @@ public class EnemyAI : MonoBehaviour
     public float moveTime = 2.5f;
     public float minAttackDistance = 1.5f;
     public bool ableToAttack = false;
-    
-    
+    public float stunTime = 1f;
+    public Animator animator;
+
+
 
 
     public enum EnemyState {Idle, Attack, Moving, Hit, Dead }
@@ -55,6 +57,7 @@ public class EnemyAI : MonoBehaviour
                 //Debug.Log("player Attacking");
                 break;
             case EnemyState.Moving:
+                animator.SetBool("EnemyWalk", true);
                 //Debug.Log("player moving");
                 moveTime -= Time.deltaTime;
                 transform.position = Vector2.MoveTowards(transform.position, target.position, enemySpeed * Time.deltaTime);
@@ -62,15 +65,24 @@ public class EnemyAI : MonoBehaviour
                 {
                     currentEnemyState = EnemyState.Idle;
                     moveTime = 2.5f;
+                    animator.SetBool("EnemyWalk", false);
                 }
                 if (distance < minAttackDistance)
                 {
                     currentEnemyState = EnemyState.Attack;
                     ableToAttack = true;
+                    animator.SetBool("EnemyWalk", false);
                 }
                 break;
             case EnemyState.Hit:
                 //Debug.Log("player hit");
+                animator.SetTrigger("damagedEnemy");
+                stunTime -= Time.deltaTime;
+                if (stunTime <= 0.0f)
+                {
+                    currentEnemyState = EnemyState.Moving;
+                    stunTime = 1f;
+                }
                 break;
             case EnemyState.Dead:
                 //Debug.Log("player dead");

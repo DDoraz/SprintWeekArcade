@@ -1,16 +1,28 @@
 fileFormatVersion: 2
-guid: 7ba9dedd87c8a4edaa188321add2760c
+guid: cbe00ad1b7ddc224da254d33563e5fe7
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6238576038640334494
-    second: Tree_Asset_1_0
+      213: -3828371350491036287
+    second: AstroDamage-Sheet_0
   - first:
-      213: 7959955428174615924
-    second: Tree_Asset_1_1
+      213: -4672612366767606098
+    second: AstroDamage-Sheet_1
   - first:
-      213: 602392939349558423
-    second: Tree_Asset_1_2
+      213: 7551172750256631948
+    second: AstroDamage-Sheet_2
+  - first:
+      213: 2892322308598054056
+    second: AstroDamage-Sheet_3
+  - first:
+      213: -4686882639355631196
+    second: AstroDamage-Sheet_4
+  - first:
+      213: -4870576944708017591
+    second: AstroDamage-Sheet_5
+  - first:
+      213: -8349361590389863524
+    second: AstroDamage-Sheet_6
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -83,25 +95,25 @@ TextureImporter:
     buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: -1
+    textureFormat: 4
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
-    overridden: 0
+    overridden: 1
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Tree_Asset_1_0
+      name: AstroDamage-Sheet_0
       rect:
         serializedVersion: 2
-        x: 2
-        y: 72
-        width: 42
-        height: 54
+        x: 0
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -109,20 +121,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 06889010459e21a44a62b2338ebcd3ad
-      internalID: 6238576038640334494
+      spriteID: 5cfbfed74f6bc9b4187866a602b250c7
+      internalID: -3828371350491036287
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tree_Asset_1_1
+      name: AstroDamage-Sheet_1
       rect:
         serializedVersion: 2
-        x: 48
-        y: 62
-        width: 44
-        height: 65
+        x: 32
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -130,20 +142,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6ffabb8ff09f29048bce83a2d502ec04
-      internalID: 7959955428174615924
+      spriteID: 567b6c2e0759b2c4b9c440a6afdaeca2
+      internalID: -4672612366767606098
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tree_Asset_1_2
+      name: AstroDamage-Sheet_2
       rect:
         serializedVersion: 2
-        x: 1
-        y: 24
-        width: 67
-        height: 43
+        x: 64
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -151,8 +163,92 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 930a5fb31ec60ec4396bb9e3abd01f2e
-      internalID: 602392939349558423
+      spriteID: f59f94f9ff8dee540afc9377bebfcfec
+      internalID: 7551172750256631948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AstroDamage-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac744985937f08240a7357160c384416
+      internalID: 2892322308598054056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AstroDamage-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63712a1a9db5dba43931b09de27dfebe
+      internalID: -4686882639355631196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AstroDamage-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3c7810e71de9454497f33405da75097
+      internalID: -4870576944708017591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AstroDamage-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 826d850fdc0418e4cacc8abed25ffdfd
+      internalID: -8349361590389863524
       vertices: []
       indices: 
       edges: []

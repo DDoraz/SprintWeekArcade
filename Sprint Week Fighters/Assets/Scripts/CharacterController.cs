@@ -14,6 +14,8 @@ public class CharacterController : MonoBehaviour
     public string moveHorizontal;
     public string moveVertical;
 
+    public GameObject gameOver;
+
     public bool canBeHit = true;
 
     // Start is called before the first frame update
@@ -63,11 +65,13 @@ public class CharacterController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.P))
         {
             TakeDamage(20);
+       
         }
 
         if (currentHealth <= 0)
         {
             Destroy(gameObject);
+            gameOver.SetActive(true);
         }
     }
 
@@ -89,6 +93,7 @@ public class CharacterController : MonoBehaviour
         {
             return;
         }
+        animator.SetTrigger("Damage");
         currentHealth -= damage;
         healthbar.SetHealth(currentHealth);
         canBeHit = false;

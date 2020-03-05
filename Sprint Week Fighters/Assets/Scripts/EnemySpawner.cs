@@ -7,6 +7,7 @@ public class EnemySpawner : MonoBehaviour
     public static int totalEnemyLeft = 10;
     public static int enemysKilled = 0;
     public static int enemiesOnScreen = 0;
+    public static int enemiesSpawned;
     public bool spawning = true;
     public GameObject enemykillcounter;
     public GameObject enemy;
@@ -14,7 +15,7 @@ public class EnemySpawner : MonoBehaviour
     GameObject[] spawnPoints;
     GameObject currentPoint;
     int index;
-    public float timeTillNextSpawn = 1f;
+    public static float timeTillNextSpawn = 1f;
     public GameObject moveHere;
 
     public float spawnTime = 1f;
@@ -34,49 +35,40 @@ public class EnemySpawner : MonoBehaviour
 
         //Debug.Log(spawning);
         //Debug.Log(totalEnemyLeft);
-        if (spawning == true)
-        {
-            if (enemiesOnScreen <= 5 || totalEnemyLeft >= 5)
-            {
-                spawning = true;
-                //SpawnEnemy();
-            }
-        }
+        Debug.Log(enemysKilled);
+        
 
-        if(enemiesOnScreen <= 5 && totalEnemyLeft >= 5)
-        {
-            spawning = true;
-        }
 
-        if(enemiesOnScreen >= 5)
-        {
-            spawning = false;
-        }
-
-        if(totalEnemyLeft <= 0)
-        {
-            spawning = false;
-            moveHere.SetActive(true);
-        }
-
-        if (totalEnemyLeft >= 1)
-        {
-            moveHere.SetActive(false);
-        }
-
+       
+        //spawns enemy after spawn time
         spawnTime -= Time.deltaTime;
-
         if (spawnTime <= 0.0f && spawning == true)
         {
             SpawnEnemy();
         }
+
+       
+
+        //brings go signal
+        if (totalEnemyLeft <= 0)
+        {
+            moveHere.SetActive(true);
+        } else
+        {
+            moveHere.SetActive(false);
+        }
+
     }
 
     public void SpawnEnemy()
     {
-        Instantiate(enemy, currentPoint.transform.position, Quaternion.identity);
-        enemiesOnScreen++;
-        spawnTime = timeTillNextSpawn;
+        if (totalEnemyLeft >= 1)
+        {
+            Instantiate(enemy, currentPoint.transform.position, Quaternion.identity);
+            enemiesOnScreen++;
+            enemiesSpawned++;
+            spawnTime = timeTillNextSpawn;
+        }
     }
 
     

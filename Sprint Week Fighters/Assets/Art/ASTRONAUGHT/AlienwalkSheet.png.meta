@@ -1,16 +1,22 @@
 fileFormatVersion: 2
-guid: 7ba9dedd87c8a4edaa188321add2760c
+guid: 52fe0adc3ded4a74b943e16645aea4c4
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6238576038640334494
-    second: Tree_Asset_1_0
+      213: 3675036092503357181
+    second: AlienwalkSheet_0
   - first:
-      213: 7959955428174615924
-    second: Tree_Asset_1_1
+      213: -6126734209992456022
+    second: AlienwalkSheet_1
   - first:
-      213: 602392939349558423
-    second: Tree_Asset_1_2
+      213: 4606389369440440576
+    second: AlienwalkSheet_2
+  - first:
+      213: 7776409496703463536
+    second: AlienwalkSheet_3
+  - first:
+      213: -3439795187440852298
+    second: AlienwalkSheet_4
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -54,7 +60,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 12
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -83,25 +89,25 @@ TextureImporter:
     buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: -1
+    textureFormat: 4
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
-    overridden: 0
+    overridden: 1
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Tree_Asset_1_0
+      name: AlienwalkSheet_0
       rect:
         serializedVersion: 2
-        x: 2
-        y: 72
-        width: 42
-        height: 54
+        x: 0
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -109,20 +115,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 06889010459e21a44a62b2338ebcd3ad
-      internalID: 6238576038640334494
+      spriteID: 89e153b075846e64abb599cdb23959c1
+      internalID: 3675036092503357181
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tree_Asset_1_1
+      name: AlienwalkSheet_1
       rect:
         serializedVersion: 2
-        x: 48
-        y: 62
-        width: 44
-        height: 65
+        x: 32
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -130,20 +136,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6ffabb8ff09f29048bce83a2d502ec04
-      internalID: 7959955428174615924
+      spriteID: e1da552ba34fcca43800cf71b0e2a110
+      internalID: -6126734209992456022
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tree_Asset_1_2
+      name: AlienwalkSheet_2
       rect:
         serializedVersion: 2
-        x: 1
-        y: 24
-        width: 67
-        height: 43
+        x: 64
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -151,8 +157,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 930a5fb31ec60ec4396bb9e3abd01f2e
-      internalID: 602392939349558423
+      spriteID: 51aa57f27bed2614c83cd9f540dd7db5
+      internalID: 4606389369440440576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlienwalkSheet_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b19ea24e7fcdbca40be0efa48e6340ab
+      internalID: 7776409496703463536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlienwalkSheet_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37f5305b820438149a8218e8abeeae77
+      internalID: -3439795187440852298
       vertices: []
       indices: 
       edges: []
