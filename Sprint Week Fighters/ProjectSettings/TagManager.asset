@@ -7,6 +7,8 @@ TagManager:
   - Enemy
   - Point
   - StageTrigger
+  - Spawner
+  - SpawnManager
   layers:
   - Default
   - TransparentFX

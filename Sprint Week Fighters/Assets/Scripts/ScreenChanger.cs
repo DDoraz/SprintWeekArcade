@@ -23,9 +23,10 @@ public class ScreenChanger : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Player" && EnemySpawner.totalEnemyLeft <= 0)
+        if (collision.gameObject.tag == "Player")
         {
             cameraSlide = true;
+            
         }
     }
 
@@ -33,8 +34,8 @@ public class ScreenChanger : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            EnemySpawner.totalEnemyLeft = 10;
-            EnemySpawner.timeTillNextSpawn = 5f;
+            enemySpawnerObject.GetComponent<SpawnManager>().screenMoved = true;
+            //enemySpawnerObject.GetComponent<SpawnManager>().nextSpawnTime = 5f;
         }
     }
 }

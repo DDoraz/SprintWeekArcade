@@ -6,9 +6,14 @@ public class Enemies : MonoBehaviour
 {
     public int maxHealth = 100;
     int currentHealth;
+    private SpawnManager _spawnManager;
+
+
+
     // Start is called before the first frame update
     void Start()
     {
+        _spawnManager = GameObject.FindGameObjectWithTag("SpawnManager").GetComponent<SpawnManager>();
         currentHealth = maxHealth;
     }
 
@@ -35,6 +40,9 @@ public class Enemies : MonoBehaviour
         EnemySpawner.enemiesOnScreen--;
         EnemySpawner.totalEnemyLeft--;
         EnemySpawner.enemysKilled++;
-;
+        _spawnManager.EnemyDefeated();
+
+
+        ;
     }
 }
