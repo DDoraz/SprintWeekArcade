@@ -21,10 +21,15 @@ public class SpawnManager : MonoBehaviour
     public GameObject screenMoveTrigger;
     public GameObject screenChanger;
     public float nextSpawnTime = 5f;
- 
+    public bool playAudio;
+
+    public AudioClip goForward;
+    private AudioSource source;
+    
+
     void Start()
     {
-       
+        source = GetComponent<AudioSource>();
         _currentWave = -1; // avoid off by 1
         _totalWaves = Waves.Length - 1; // adjust, because we're using 0 index
         StartNextWave();
@@ -77,6 +82,7 @@ public class SpawnManager : MonoBehaviour
     {
         if(_enemiesInWaveLeft <= 0)
         {
+            playAudio = true;
             goSign.SetActive(true);
             screenMoveTrigger.SetActive(true);
             //nextSpawnTime -= Time.deltaTime;
@@ -110,5 +116,11 @@ public class SpawnManager : MonoBehaviour
         }
         Debug.Log(_enemiesInWaveLeft);
         Debug.Log(screenMoved);
+        
+        if(playAudio == true)
+        {
+            source.PlayOneShot(goForward, 1);
+            playAudio = false;
+        }
     }
 }

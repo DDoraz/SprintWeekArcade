@@ -8,6 +8,24 @@ TextureImporter:
   - first:
       213: 5676812501810445274
     second: Enemy_Character_Sprite_Idle_1
+  - first:
+      213: -452090653759775454
+    second: Enemy_Character_Sprite_Run2_0
+  - first:
+      213: 7554034708361213174
+    second: Enemy_Character_Sprite_Run2_1
+  - first:
+      213: -6032452108938992788
+    second: Enemy_Character_Sprite_Run2_2
+  - first:
+      213: -1384739882937062840
+    second: Enemy_Character_Sprite_Run2_3
+  - first:
+      213: 7968057536308239644
+    second: Enemy_Character_Sprite_Run2_4
+  - first:
+      213: 7953911984007241356
+    second: Enemy_Character_Sprite_Run2_5
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -51,7 +69,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 24
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -92,13 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Enemy_Character_Sprite_Idle_0
+      name: Enemy_Character_Sprite_Run2_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 28
         y: 0
-        width: 35
-        height: 42
+        width: 22
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -106,20 +124,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3f36c26ce6d2592459aeed83f89b5f5c
-      internalID: 8024608357424879060
+      spriteID: 83747a5396178ed488f247e254069702
+      internalID: -452090653759775454
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enemy_Character_Sprite_Idle_1
+      name: Enemy_Character_Sprite_Run2_1
       rect:
         serializedVersion: 2
-        x: 37
-        y: 0
-        width: 36
-        height: 40
+        x: 50
+        y: 2
+        width: 24
+        height: 30
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -127,8 +145,92 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9d5ceb74df6f55f42a4922a1757b456c
-      internalID: 5676812501810445274
+      spriteID: 5ca7d48ff176c9d46b8d0309cfb7fcbc
+      internalID: 7554034708361213174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Character_Sprite_Run2_2
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 0
+        width: 24
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a306defbb4faeb04d964599016946dd8
+      internalID: -6032452108938992788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Character_Sprite_Run2_3
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 0
+        width: 21
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5e0dcc2db0ae0349af3dc2a6d1179e5
+      internalID: -1384739882937062840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Character_Sprite_Run2_4
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 0
+        width: 25
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0b828da4873f894c902854021a7e456
+      internalID: 7968057536308239644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Character_Sprite_Run2_5
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 0
+        width: 21
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 097b31de8588d1146af26a7fb582a310
+      internalID: 7953911984007241356
       vertices: []
       indices: 
       edges: []

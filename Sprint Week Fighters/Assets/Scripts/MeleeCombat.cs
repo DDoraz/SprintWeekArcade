@@ -14,14 +14,16 @@ public class MeleeCombat : MonoBehaviour
     public float nextAttackTime = 0f;
     public KeyCode lightAttack;
     public KeyCode heavyAttack;
-
+    public AudioClip lightPunch;
+    public AudioClip hardPunch;
+    private AudioSource source;
 
 
     public Animator animator;
     // Start is called before the first frame update
     void Start()
     {
-        
+        source = GetComponent<AudioSource>();
     }
     private void FixedUpdate()
     {
@@ -34,12 +36,14 @@ public class MeleeCombat : MonoBehaviour
         {
             if (Input.GetKeyDown(lightAttack))
             {
+                source.PlayOneShot(lightPunch, 1);
                 animator.SetBool("isWalking", false);
                 Attack();
                 nextAttackTime = Time.time + 1f / weakAttackRate;
             }
             if (Input.GetKeyDown(heavyAttack))
             {
+                source.PlayOneShot(hardPunch, 1);
                 animator.SetBool("isWalking", false);
                 StrongAttack();
                 nextAttackTime = Time.time + 1f / strongAttackRate;        

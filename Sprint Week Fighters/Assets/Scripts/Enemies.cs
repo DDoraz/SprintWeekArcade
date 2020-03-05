@@ -8,11 +8,16 @@ public class Enemies : MonoBehaviour
     int currentHealth;
     private SpawnManager _spawnManager;
 
+    public AudioClip enemyHit;
+    public AudioClip enemyDeath;
+    private AudioSource source;
+
 
 
     // Start is called before the first frame update
     void Start()
     {
+        source = GetComponent<AudioSource>();
         _spawnManager = GameObject.FindGameObjectWithTag("SpawnManager").GetComponent<SpawnManager>();
         currentHealth = maxHealth;
     }
@@ -25,6 +30,7 @@ public class Enemies : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
+        source.PlayOneShot(enemyHit, 1);
         currentHealth -= damage;
 
         if(currentHealth <= 0)
@@ -35,6 +41,7 @@ public class Enemies : MonoBehaviour
 
     public void Die()
     {
+        source.PlayOneShot(enemyDeath, 1);
         Destroy(gameObject);
         Debug.Log("oh ma god she fukin dead");
         EnemySpawner.enemiesOnScreen--;

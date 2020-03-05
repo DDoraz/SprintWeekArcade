@@ -11,7 +11,7 @@ public class MainMenu : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.Alpha1))
         {
-            SceneManager.LoadScene("DavidScene", LoadSceneMode.Single);
+            SceneManager.LoadScene("SpawnTestScene", LoadSceneMode.Single);
             Debug.Log("Key1 Pressed");
         }
     }

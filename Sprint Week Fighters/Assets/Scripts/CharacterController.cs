@@ -18,9 +18,13 @@ public class CharacterController : MonoBehaviour
 
     public bool canBeHit = true;
 
+    public AudioClip playerHit;
+    private AudioSource source;
+
     // Start is called before the first frame update
     void Start()
     {
+        source = GetComponent<AudioSource>();
         rb = GetComponent<Rigidbody2D>();
         currentHealth = maxHealth;
         healthbar.SetMaxHealth(maxHealth);
@@ -70,6 +74,7 @@ public class CharacterController : MonoBehaviour
 
         if (currentHealth <= 0)
         {
+            
             Destroy(gameObject);
             gameOver.SetActive(true);
         }
@@ -93,6 +98,8 @@ public class CharacterController : MonoBehaviour
         {
             return;
         }
+
+        source.PlayOneShot(playerHit, 1);
         animator.SetTrigger("Damage");
         currentHealth -= damage;
         healthbar.SetHealth(currentHealth);

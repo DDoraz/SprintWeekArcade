@@ -188,7 +188,8 @@ MonoBehaviour:
   nextAttackTime: 0
   lightAttack: 306
   heavyAttack: 308
-  enemyHit: {fileID: 0}
+  lightPunch: {fileID: 0}
+  hardPunch: {fileID: 0}
   animator: {fileID: 4825284877199227728}
 --- !u!114 &4825284877199227722
 MonoBehaviour:
@@ -209,7 +210,9 @@ MonoBehaviour:
   healthbar: {fileID: 0}
   moveHorizontal: Horizontal
   moveVertical: Vertical
+  gameOver: {fileID: 0}
   canBeHit: 1
+  playerHit: {fileID: 8300000, guid: 23990a8e74d45e44bb4078b574fa23cd, type: 3}
 --- !u!95 &4825284877199227728
 Animator:
   serializedVersion: 3

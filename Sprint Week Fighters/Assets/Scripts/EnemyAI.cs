@@ -14,6 +14,9 @@ public class EnemyAI : MonoBehaviour
     public float stunTime = 1f;
     public Animator animator;
 
+    public AudioClip enemyAttack;
+    private AudioSource source;
+
 
 
 
@@ -22,6 +25,7 @@ public class EnemyAI : MonoBehaviour
  
     public void Start()
     {
+        source = GetComponent<AudioSource>();
         currentEnemyState = EnemyState.Moving;
         target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
         
@@ -50,6 +54,8 @@ public class EnemyAI : MonoBehaviour
             case EnemyState.Attack:
                 if(ableToAttack == true)
                 {
+                    source.PlayOneShot(enemyAttack, 1);
+                    animator.SetTrigger("EnemyPunch");
                     target.gameObject.GetComponent<CharacterController>().TakeDamage(10);
                     ableToAttack = false;
                     currentEnemyState = EnemyState.Idle;
