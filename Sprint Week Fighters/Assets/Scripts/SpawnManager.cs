@@ -20,8 +20,10 @@ public class SpawnManager : MonoBehaviour
     public GameObject goSign;
     public GameObject screenMoveTrigger;
     public GameObject screenChanger;
+    public GameObject moveObject;
     public float nextSpawnTime = 5f;
-    public bool playAudio;
+    public bool alreadyPlayed = false;
+
 
     public AudioClip goForward;
     private AudioSource source;
@@ -82,10 +84,14 @@ public class SpawnManager : MonoBehaviour
     {
         if(_enemiesInWaveLeft <= 0)
         {
-            playAudio = true;
+            if (!alreadyPlayed)
+            {
+                //Debug.Log("we be playing");
+                source.PlayOneShot(goForward, 1);
+                alreadyPlayed = true;
+            }
             goSign.SetActive(true);
             screenMoveTrigger.SetActive(true);
-            //nextSpawnTime -= Time.deltaTime;
             screenMoved = true;
            
         }
@@ -97,10 +103,10 @@ public class SpawnManager : MonoBehaviour
 
         if(screenMoved == true && nextSpawnTime <=0)
         {
+
             _enemiesInWaveLeft = 0;
             _spawnedEnemies = _totalEnemiesInCurrentWave;
             StartNextWave();
-            //nextSpawnTime = 10000f;
             screenChanger.GetComponent<ScreenChanger>().cameraSlide = false;
             screenMoved = false;
         }
@@ -113,14 +119,13 @@ public class SpawnManager : MonoBehaviour
         if(screenMoved == false)
         {
             nextSpawnTime = 5;
+            alreadyPlayed = false;
         }
-        Debug.Log(_enemiesInWaveLeft);
-        Debug.Log(screenMoved);
-        
-        if(playAudio == true)
+        //Debug.Log(_enemiesInWaveLeft);
+        //Debug.Log(screenMoved);
+        if(moveObject.GetComponent<moveCamera>().LastStage == true)
         {
-            source.PlayOneShot(goForward, 1);
-            playAudio = false;
+            goSign.SetActive(false);
         }
     }
 }

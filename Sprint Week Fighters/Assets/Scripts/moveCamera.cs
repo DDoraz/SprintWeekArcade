@@ -9,6 +9,8 @@ public class moveCamera : MonoBehaviour
     public Transform endMarker2 = null;
     public Transform endMarker3 = null;
     public Transform endMarker4 = null;
+    public Transform endMarker5 = null;
+    public bool LastStage = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,25 +25,27 @@ public class moveCamera : MonoBehaviour
 
     public void moveCameraOver()
     {
-        if(spawnManager.GetComponent<SpawnManager>()._currentWave == 0)
+        if(spawnManager.GetComponent<SpawnManager>()._spawnedEnemies == 6)
         {
             transform.position = Vector3.Lerp(transform.position, endMarker.position, Time.deltaTime);
         }
 
-        if (spawnManager.GetComponent<SpawnManager>()._currentWave == 1)
+        if (spawnManager.GetComponent<SpawnManager>()._spawnedEnemies == 8)
         {
             transform.position = Vector3.Lerp(transform.position, endMarker2.position, Time.deltaTime);
         }
 
-        if (spawnManager.GetComponent<SpawnManager>()._currentWave == 2)
-        {
-            transform.position = Vector3.Lerp(transform.position, endMarker3.position, Time.deltaTime);
-        }
-
-        if (spawnManager.GetComponent<SpawnManager>()._currentWave == 3)
+        if (spawnManager.GetComponent<SpawnManager>()._spawnedEnemies == 10)
         {
             transform.position = Vector3.Lerp(transform.position, endMarker4.position, Time.deltaTime);
         }
 
+        if (spawnManager.GetComponent<SpawnManager>()._spawnedEnemies == 12)
+        {
+           
+            transform.position = Vector3.Lerp(transform.position, endMarker5.position, Time.deltaTime);
+            LastStage = true;
+        }
+        Debug.Log(spawnManager.GetComponent<SpawnManager>()._spawnedEnemies);
     }
 }

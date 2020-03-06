@@ -17,7 +17,7 @@ public class CharacterController : MonoBehaviour
     public GameObject gameOver;
 
     public bool canBeHit = true;
-
+    public AudioClip playerDead;
     public AudioClip playerHit;
     private AudioSource source;
 
@@ -74,7 +74,6 @@ public class CharacterController : MonoBehaviour
 
         if (currentHealth <= 0)
         {
-            
             Destroy(gameObject);
             gameOver.SetActive(true);
         }

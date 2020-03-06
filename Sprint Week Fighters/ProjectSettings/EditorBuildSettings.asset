@@ -12,8 +12,11 @@ EditorBuildSettings:
     path: Assets/Scenes/TitleScene.unity
     guid: 9b7c28b50dff9f046b1411425545bc14
   - enabled: 1
-    path: Assets/Scenes/SpawnTestScene.unity
+    path: Assets/Scenes/Game.unity
     guid: 61a7dbbaea5d5854c8bc60eba5ccb2a6
+  - enabled: 1
+    path: Assets/Scenes/EndScreen.unity
+    guid: f7051b9efcb405d47aed9d82e3fe62e3
   - enabled: 0
     path: Assets/Scenes/DavidScene.unity
     guid: bc0dbfbc81d4ea1459d03a50071c1314
